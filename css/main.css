@@ -95,9 +95,18 @@ html {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (max-width: 1229px) and (min-width: 720px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 719px) {
+  .container {
+    width: 100%;
+  }
+}
 body {
   position: relative;
-  padding-top: 100px;
 }
 .header {
   top: 0;
@@ -126,8 +135,19 @@ body {
 .header a:hover {
   color: #3b8575;
 }
+@media (max-width: 1229px) and (min-width: 720px) {
+  .header li {
+    font-size: 9px;
+  }
+}
+@media (max-width: 719px) {
+  .header ul {
+    display: none;
+  }
+}
 .block01 {
   height: 720px;
+  margin-top: 100px;
   padding-top: 60px;
   background: url("../img/b01_bg.jpg") top center no-repeat;
 }
@@ -173,6 +193,61 @@ body {
   color: #2d0f6f;
   display: block;
 }
+@media (max-width: 1229px) {
+  .block01 .logo {
+    width: 220px;
+  }
+  .block01 .contact {
+    width: 180px;
+  }
+  .block01 .contact .tel {
+    color: #222;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .block01 .contact .btn-callback {
+    color: #333;
+  }
+  .block01 h1 {
+    padding-top: 120px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 719px) {
+  .block01 .logo {
+    float: none;
+    width: 290px;
+    margin: 0 auto 30px auto;
+  }
+  .block01 .contact {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .block01 .contact .tel {
+    color: #222;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .block01 .contact .btn-callback {
+    color: #333;
+    font-size: 16px;
+  }
+  .block01 h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 20px;
+  }
+  .block01 h1 span {
+    color: #fff;
+  }
+}
 .block02 {
   padding: 40px 0;
   font-size: 25px;
@@ -180,6 +255,12 @@ body {
   font-weight: 300;
   line-height: 40px;
   text-align: center;
+}
+@media (max-width: 1229px) and (min-width: 720px) {
+  .block02 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .block03 {
   color: #fff;
@@ -199,18 +280,35 @@ body {
 }
 .block03 h2 span {
   padding: 0 60px;
-  height: 74px;
+  line-height: 74px;
   display: inline-block;
   background: rgba(255, 255, 255, 0.8);
 }
 .block03 li {
-  text-shadow: -2px 4px 27px rgba(43, 186, 228, 0.97);
+  text-shadow: 2px 8px 27px #2bbae4;
+}
+@media (max-width: 1229px) {
+  .block03 {
+    height: 350px;
+    background-position: center bottom;
+    font-size: 23px;
+    line-height: 40px;
+  }
+  .block03 h2 {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .block03 h2 span {
+    line-height: 40px;
+    padding: 0 10px;
+  }
 }
 .block04 {
   padding-top: 50px;
   padding-bottom: 80px;
 }
 .block04 .city {
+  width: 100%;
   display: table;
   margin-bottom: 40px;
 }
@@ -243,6 +341,40 @@ body {
   line-height: 40px;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 1229px) {
+  .block04 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .block04 .city .city-text {
+    padding: 5px;
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .block04 .text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 719px) {
+  .block04 .city {
+    width: 224px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block04 .city a {
+    width: 224px;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  .block04 .city .city-text {
+    padding: 15px 5px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .block05 {
   padding-top: 30px;
@@ -286,6 +418,16 @@ body {
   display: inline-block;
   background: url("../img/icon-user.png") left center no-repeat;
 }
+@media (max-width: 600px) {
+  .block05 .auto {
+    margin: 0;
+  }
+  .block05 .auto li {
+    float: none;
+    width: 290px;
+    margin: 0 auto 30px auto;
+  }
+}
 .block06 {
   padding-top: 80px;
   padding-bottom: 50px;
@@ -328,6 +470,28 @@ body {
 }
 .block06 li.item9 {
   background: url("../img/b06_item9.png") top center no-repeat;
+}
+@media (max-width: 1229px) {
+  .block06 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .block06 li {
+    width: 33.33%;
+  }
+  .block06 li.item6 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 719px) {
+  .block06 li {
+    width: 50%;
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .block06 li.item8 {
+    display: none;
+  }
 }
 .block07 {
   color: #fff;
@@ -646,9 +810,9 @@ body {
   color: #282828;
   font-size: 16px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 20px;
   text-align: center;
-  padding: 20px 50px;
+  padding: 30px 50px;
   position: relative;
   background: #ffcb05;
   text-decoration: none;
