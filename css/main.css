@@ -368,10 +368,24 @@ body {
   text-decoration: none;
   border-left: 8px solid #fff;
   border-right: 8px solid #fff;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.block04 .city a .city-image {
+  opacity: .7;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .block04 .city a:hover {
   color: #fff;
   background: #185b4c;
+}
+.block04 .city a:hover .city-image {
+  opacity: 1;
 }
 .block04 .city .city-text {
   padding: 5px;
@@ -1133,6 +1147,12 @@ body {
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 40px;
+}
+@media (max-width: 719px) {
+  .popup-block {
+    width: 100%;
+    padding: 30px 30px;
+  }
 }
 .form-group {
   margin-bottom: 30px;

@@ -354,10 +354,21 @@ body {
 			text-decoration: none;
 			border-left: 8px solid #fff;
 			border-right: 8px solid #fff;
+			.transition(all 0.4s ease);
+
+
+			.city-image {
+				opacity: .7;
+				.transition(all 0.4s ease);
+			}
 
 			&:hover {
 				color: #fff;
 				background: #185b4c;
+
+				.city-image {
+					opacity: 1;
+				}
 			}
 		}
 
@@ -1262,7 +1273,8 @@ body {
 	}
 
 	@media (max-width: 719px) {
-
+		width: 100%;
+		padding: 30px 30px;
 	}
 }
 

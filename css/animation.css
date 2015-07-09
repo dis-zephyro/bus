@@ -1,0 +1,17 @@
+.block03 li {
+}
+
+.block03 li.item1.animated {
+	-webkit-animation: bounceInRight 1s .2s forwards;
+	animation: bounceInRight 1s .2s forwards;
+}
+
+.block03 li.item2.animated {
+	-webkit-animation: bounceInRight 1s .5s forwards;
+	animation: bounceInRight  1s.5s forwards;
+}
+
+.block03 li.item3.animated {
+	-webkit-animation: bounceInRight 1s .8s forwards;
+	animation: bounceInRight 1s .8s forwards;
+}
