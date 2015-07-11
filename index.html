@@ -7,12 +7,33 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/icon/android-chrome-192x192.png" sizes="192x192">
+        <meta name="msapplication-square70x70logo" content="/icon/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="/icon/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="/icon/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="/icon/largetile.png" />
+
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet/less" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
-        <link rel="stylesheet/less" href="less/main.less">
-        <script src="js/vendor/less.min.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--link rel="stylesheet/less" href="less/main.less">
+        <script src="js/vendor/less.min.js"></script-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -53,17 +74,24 @@
         <section class="block03" id="block03">
             <div class="container">
                 <h2><span>Ежедневные автобусные рейсы на черное море</span></h2>
-                <ul>
-                    <li class="item1 scroll">Джубга  Туапсе</li>
-                    <li class="item2 scroll">Лазаревское</li>
-                    <li class="item3 scroll">Сочи  Адлер</li>
-                </ul>
+                <div class="clearfix">
+                    <ul>
+                        <li class="item1 scroll">Джубга  Туапсе</li>
+                        <li class="item2 scroll">Лазаревское</li>
+                        <li class="item3 scroll">Сочи  Адлер</li>
+                    </ul>
+                    <ul>
+                        <li class="item1 scroll">Феодосия</li>
+                        <li class="item2 scroll">Сухуми</li>
+                        <li class="item3 scroll">Новороссийск</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="block04" id="block04">
             <div class="container">
                 <div class="city">
-                    <a href="#" class="city-link">
+                    <a id="map1" class="city-link map1">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item1.jpg" alt="">
                         </div>
@@ -71,7 +99,7 @@
                             Ставрополь, Анапа
                         </div>
                     </a>
-                    <a href="#" class="city-link">
+                    <a id="map2" class="city-link map2">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item2.jpg" alt="">
                         </div>
@@ -79,7 +107,7 @@
                             Ставрополь, Архипо-осиповка, Дивноморск, Геленджик,Кабардинка, Новороссийск
                         </div>
                     </a>
-                    <a href="#" class="city-link">
+                    <a id="map3" class="city-link map3">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item3.jpg" alt="">
                         </div>
@@ -87,7 +115,7 @@
                             Джубга, Туапсе, Лазаревское, Сочи, Адлер
                         </div>
                     </a>
-                    <a href="#" class="city-link">
+                    <a id="map4" class="city-link map4">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item4.jpg" alt="">
                         </div>
@@ -95,7 +123,7 @@
                             Ставрополь, Абхазия
                         </div>
                     </a>
-                    <a href="#" class="city-link">
+                    <a id="map5" class="city-link map5">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item5.jpg" alt="">
                         </div>
@@ -105,7 +133,14 @@
                     </a>
                 </div>
             </div>
-            <div id="map"></div>
+            <div class="map">
+                <div id="layout0"></div>
+                <div id="layout1"></div>
+                <div id="layout2"></div>
+                <div id="layout3"></div>
+                <div id="layout4"></div>
+                <div id="layout5"></div>
+            </div>
             <div class="container">
                 <p class="text">
                     <span class="text-red">Билеты на море от 720 руб.! </span>
@@ -297,14 +332,18 @@
             <div class="popup-block" id="popup">
                 <div class="popup-title">Заказать билет</div>
                 <span class="btn-close">X</span>
-                <form class="form">
+                <form class="form" name="form" method="POST" action="javascript:void(0);">
                     <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Ваше имя">
+                        <label class="name none required">
+                            <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+                        </label>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Контактный номер телефона">
+                        <label class="phone none required">
+                            <input class="form-control" type="text" name="phone" placeholder="Контактный номер телефона">
+                        </label>
                     </div>
-                    <button type="submit" class="btn">Заказать билет</button>
+                    <button type="submit" class="btn btn-submit">Заказать билет</button>
                 </form>
             </div>
         </div>
@@ -315,6 +354,7 @@
         <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="js/vendor/validator.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

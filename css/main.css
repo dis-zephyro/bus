@@ -191,7 +191,7 @@ body {
 }
 .block01 {
   height: 720px;
-  margin-top: 80px;
+  margin-top: 60px;
   padding-top: 60px;
   background: url("../img/b01_bg.jpg") top center no-repeat;
 }
@@ -240,20 +240,23 @@ body {
 @media (max-width: 1229px) {
   .block01 {
     margin-top: 0;
+    height: 600px;
+    background-size: cover;
   }
   .block01 .logo {
     width: 220px;
   }
   .block01 .contact {
     width: 180px;
+    text-shadow: 0px 1px 3px #000000;
   }
   .block01 .contact .tel {
-    color: #222;
+    color: #fff;
     font-size: 20px;
     line-height: 24px;
   }
   .block01 .contact .btn-callback {
-    color: #333;
+    color: #fff;
   }
   .block01 h1 {
     padding-top: 120px;
@@ -277,12 +280,12 @@ body {
     margin-bottom: 30px;
   }
   .block01 .contact .tel {
-    color: #222;
+    color: #fff;
     font-size: 25px;
     line-height: 30px;
   }
   .block01 .contact .btn-callback {
-    color: #333;
+    color: #fff;
     font-size: 16px;
   }
   .block01 h1 {
@@ -303,7 +306,7 @@ body {
   line-height: 40px;
   text-align: center;
 }
-@media (max-width: 1229px) and (min-width: 720px) {
+@media (max-width: 1229px) {
   .block02 {
     font-size: 18px;
     line-height: 24px;
@@ -331,8 +334,20 @@ body {
   display: inline-block;
   background: rgba(255, 255, 255, 0.8);
 }
+.block03 ul {
+  float: left;
+  width: 50%;
+  padding-left: 80px;
+}
 .block03 li {
-  text-shadow: 2px 8px 27px #2bbae4;
+  margin-bottom: 10px;
+  text-shadow: 0px 1px 3px #000000;
+}
+.block03 li.item2 {
+  padding-left: 50px;
+}
+.block03 li.item3 {
+  padding-left: 100px;
 }
 @media (max-width: 1229px) {
   .block03 {
@@ -350,6 +365,23 @@ body {
     padding: 0 10px;
   }
 }
+@media (max-width: 719px) {
+  .block03 ul {
+    padding-left: 0;
+  }
+  .block03 li {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 3px #000000;
+  }
+  .block03 li.item2 {
+    padding-left: 0;
+  }
+  .block03 li.item3 {
+    padding-left: 0;
+  }
+}
 .block04 {
   padding-top: 50px;
   padding-bottom: 80px;
@@ -362,6 +394,7 @@ body {
 .block04 .city a {
   width: 20%;
   color: #ffcb05;
+  cursor: pointer;
   background: #3b8575;
   text-align: center;
   display: table-cell;
@@ -392,10 +425,25 @@ body {
   font-size: 16px;
   line-height: 18px;
 }
-.block04 #map {
+.block04 .map {
   width: 100%;
   height: 580px;
-  background: url("../img/map.jpg") top center no-repeat;
+}
+.block04 .map #layout0,
+.block04 .map #layout1,
+.block04 .map #layout2,
+.block04 .map #layout3,
+.block04 .map #layout4,
+.block04 .map #layout5 {
+  width: 100%;
+  height: 100%;
+}
+.block04 .map #layout1,
+.block04 .map #layout2,
+.block04 .map #layout3,
+.block04 .map #layout4,
+.block04 .map #layout5 {
+  display: none;
 }
 .block04 .text {
   font-size: 30px;
@@ -558,7 +606,7 @@ body {
   color: #fff;
   height: 700px;
   padding-top: 160px;
-  background: url("../img/b07_bg.jpg") top center no-repeat;
+  background: url("../img/b07_bg.jpg") top right no-repeat;
 }
 .block07 h2 {
   font-size: 48px;
@@ -1154,6 +1202,18 @@ body {
     padding: 30px 30px;
   }
 }
+.done {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 100px 20px;
+}
+.done .done-title {
+  color: #3b8575;
+  display: block;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
 .form-group {
   margin-bottom: 30px;
 }
@@ -1167,8 +1227,10 @@ body {
   padding: 24px 10px;
   text-align: center;
   display: inline-block;
-  text-transform: uppercase;
   border: 1px solid #aaaaaa;
+}
+.red .form-control {
+  border-color: darkred;
 }
 .btn {
   border: none;
