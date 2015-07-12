@@ -29,6 +29,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/vendor/slick/slick.css">
 
         <link rel="stylesheet" href="css/main.css">
 
@@ -61,7 +62,7 @@
                 <div class="contact">
                     <span class="tel">8 (625) 40-61-16</span>
                     <span class="tel">8 (928) 010-30-10</span>
-                    <a href="#popup" class="btn-callback btn-popup">Заказать звонок</a>
+                    <a href="#popup2" class="btn-callback btn-popup">Заказать звонок</a>
                 </div>
                 <h1>Пассажирские перевозки по Ставропольскому краю,<span>а также по всей России и странам СНГ</span></h1>
             </div>
@@ -74,20 +75,37 @@
         <section class="block03" id="block03">
             <div class="container">
                 <h2><span>Ежедневные автобусные рейсы на черное море</span></h2>
-                <div class="clearfix">
-                    <ul>
-                        <li class="item1 scroll">Джубга</li>
-                        <li class="item2 scroll">Лазаревское</li>
-                        <li class="item3 scroll"> Туапсе</li>
-                        <li class="item4 scroll">Сочи</li>
-                    </ul>
-                    <ul>
-                        <li class="item1 scroll">Адлер</li>
-                        <li class="item2 scroll">Феодосия</li>
-                        <li class="item3 scroll">Сухуми</li>
-                        <li class="item4 scroll">Новороссийск</li>
-                    </ul>
+                <div class="city-slider">
+                    <div class="city-slide clearfix">
+                        <ul>
+                            <li class="item1 scroll">Джубга</li>
+                            <li class="item2 scroll">Лазаревское</li>
+                            <li class="item3 scroll"> Туапсе</li>
+                            <li class="item4 scroll">Сочи</li>
+                        </ul>
+                        <ul>
+                            <li class="item5 scroll">Адлер</li>
+                            <li class="item6 scroll">Анапа</li>
+                            <li class="item7 scroll">Абхазия</li>
+                            <li class="item8 scroll">Крым</li>
+                        </ul>
+                    </div>
+                    <div class="city-slide clearfix">
+                        <ul>
+                            <li class="item1 scroll">Архипо-осиповка</li>
+                            <li class="item2 scroll">Дивноморск</li>
+                            <li class="item3 scroll"> Геленджик</li>
+                            <li class="item4 scroll">Кабардинка</li>
+                        </ul>
+                        <ul>
+                            <li class="item5 scroll">Новороссийск</li>
+                            <li class="item6 scroll">Феодосия</li>
+                            <li class="item7 scroll">Сухуми</li>
+                            <li class="item8 scroll">Севастополь</li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
         </section>
         <section class="block04" id="block04">
@@ -162,7 +180,7 @@
                     <br/>Бронирование по телефону: 8 (9624) 433-655, 8 (918) 777-25-64 или на сайте
                 </p>
                 <div class="text-center">
-                    <a href="#popup" class="btn btn-girl btn-popup">Заказать билет</a>
+                    <a href="#popup3" class="btn btn-girl btn-popup">Заказать билет</a>
                 </div>
             </div>
         </section>
@@ -207,6 +225,7 @@
                     <li class="item7">Чистый и ухоженный салон</li>
                     <li class="item8">Большое багажное отделение С дополнительными багажниками для перевозки объемных вещей</li>
                     <li class="item9">Пассажиры застрахованы (свидетельства), есть полис</li>
+                    <li class="item10">Миникухня, холодилинк и туалет для поездок на дальние расстояния</li>
                 </ul>
             </div>
         </section>
@@ -344,6 +363,46 @@
         <!-- popup -->
         <div class="hidden">
             <div class="popup-block" id="popup">
+                <div class="popup-title">Узнать подробности</div>
+                <span class="btn-close">X</span>
+                <form class="form" name="form" method="POST" action="javascript:void(0);">
+                    <div class="form-group">
+                        <label class="name none required">
+                            <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="phone none required">
+                            <input class="form-control" type="text" name="phone" placeholder="Контактный номер телефона">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-submit">узнать подробности</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="hidden">
+            <div class="popup-block" id="popup2">
+                <div class="popup-title">Заказать звонок</div>
+                <span class="btn-close">X</span>
+                <form class="form" name="form" method="POST" action="javascript:void(0);">
+                    <div class="form-group">
+                        <label class="name none required">
+                            <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="phone none required">
+                            <input class="form-control" type="text" name="phone" placeholder="Контактный номер телефона">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="hidden">
+            <div class="popup-block" id="popup3">
                 <div class="popup-title">Заказать билет</div>
                 <span class="btn-close">X</span>
                 <form class="form" name="form" method="POST" action="javascript:void(0);">
@@ -361,11 +420,13 @@
                 </form>
             </div>
         </div>
+
         <!-- popup end -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/slick/slick.min.js"></script>
         <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/vendor/validator.js"></script>
         <script src="js/main.js"></script>

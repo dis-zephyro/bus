@@ -7,16 +7,36 @@
 }
 
 .block03 li.item2.animated {
-	-webkit-animation: bounceInRight 1s .5s forwards;
-	animation: bounceInRight  1s.5s forwards;
+	-webkit-animation: bounceInRight 1s .4s forwards;
+	animation: bounceInRight  1s.4s forwards;
 }
 
 .block03 li.item3.animated {
+	-webkit-animation: bounceInRight 1s .6s forwards;
+	animation: bounceInRight 1s .6s forwards;
+}
+
+.block03 li.item4.animated {
 	-webkit-animation: bounceInRight 1s .8s forwards;
 	animation: bounceInRight 1s .8s forwards;
 }
 
-.block03 li.item4.animated {
+.block03 li.item5.animated {
 	-webkit-animation: bounceInRight 1s 1s forwards;
 	animation: bounceInRight 1s 1s forwards;
+}
+
+.block03 li.item6.animated {
+	-webkit-animation: bounceInRight 1s 1.2s forwards;
+	animation: bounceInRight  1s 1.2s forwards;
+}
+
+.block03 li.item7.animated {
+	-webkit-animation: bounceInRight 1s 1.4s forwards;
+	animation: bounceInRight 1s 1.4s forwards;
+}
+
+.block03 li.item8.animated {
+	-webkit-animation: bounceInRight 1s 1.6s forwards;
+	animation: bounceInRight 1s 1.6s forwards;
 }

@@ -18,6 +18,17 @@ $(function() {
 });
 
 
+$('.city-slider').slick({
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
+
 $(document).ready(function() {
 
     $('.btn-submit').click(function() {
