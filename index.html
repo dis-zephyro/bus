@@ -8,27 +8,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/icon/android-chrome-192x192.png" sizes="192x192">
-        <meta name="msapplication-square70x70logo" content="/icon/smalltile.png" />
-        <meta name="msapplication-square150x150logo" content="/icon/mediumtile.png" />
-        <meta name="msapplication-wide310x150logo" content="/icon/widetile.png" />
-        <meta name="msapplication-square310x310logo" content="/icon/largetile.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="icon/android-chrome-192x192.png" sizes="192x192">
+        <meta name="msapplication-square70x70logo" content="icon/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="icon/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="icon/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="icon/largetile.png" />
 
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet/less" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
 
         <link rel="stylesheet" href="css/main.css">
 
@@ -76,14 +76,16 @@
                 <h2><span>Ежедневные автобусные рейсы на черное море</span></h2>
                 <div class="clearfix">
                     <ul>
-                        <li class="item1 scroll">Джубга  Туапсе</li>
+                        <li class="item1 scroll">Джубга</li>
                         <li class="item2 scroll">Лазаревское</li>
-                        <li class="item3 scroll">Сочи  Адлер</li>
+                        <li class="item3 scroll"> Туапсе</li>
+                        <li class="item4 scroll">Сочи</li>
                     </ul>
                     <ul>
-                        <li class="item1 scroll">Феодосия</li>
-                        <li class="item2 scroll">Сухуми</li>
-                        <li class="item3 scroll">Новороссийск</li>
+                        <li class="item1 scroll">Адлер</li>
+                        <li class="item2 scroll">Феодосия</li>
+                        <li class="item3 scroll">Сухуми</li>
+                        <li class="item4 scroll">Новороссийск</li>
                     </ul>
                 </div>
             </div>
@@ -91,7 +93,7 @@
         <section class="block04" id="block04">
             <div class="container">
                 <div class="city">
-                    <a id="map1" class="city-link map1">
+                    <a href="#map" id="map1" class="city-link map1">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item1.jpg" alt="">
                         </div>
@@ -99,47 +101,59 @@
                             Ставрополь, Анапа
                         </div>
                     </a>
-                    <a id="map2" class="city-link map2">
+                    <a href="#map" id="map2" class="city-link map2">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item2.jpg" alt="">
                         </div>
                         <div class="city-text">
-                            Ставрополь, Архипо-осиповка, Дивноморск, Геленджик,Кабардинка, Новороссийск
+                            Ставрополь - Архипо-осиповка - Дивноморск - Геленджик - Кабардинка - Новороссийск
                         </div>
                     </a>
-                    <a id="map3" class="city-link map3">
+                    <a href="#map" id="map3" class="city-link map3">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item3.jpg" alt="">
                         </div>
                         <div class="city-text">
-                            Джубга, Туапсе, Лазаревское, Сочи, Адлер
+                            Джубга - Туапсе - Лазаревское - Сочи - Адлер
                         </div>
                     </a>
-                    <a id="map4" class="city-link map4">
+                    <a href="#map" id="map4" class="city-link map4">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item4.jpg" alt="">
                         </div>
                         <div class="city-text">
-                            Ставрополь, Абхазия
+                            Ставрополь - Абхазия
                         </div>
                     </a>
-                    <a id="map5" class="city-link map5">
+                    <a href="#map" id="map5" class="city-link map5">
                         <div class="city-image">
                             <img class="img-responsive" src="img/b04_item5.jpg" alt="">
                         </div>
                         <div class="city-text">
-                            Ставрополь ,Крым
+                            Ставрополь - Крым
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="map">
-                <div id="layout0"></div>
-                <div id="layout1"></div>
-                <div id="layout2"></div>
-                <div id="layout3"></div>
-                <div id="layout4"></div>
-                <div id="layout5"></div>
+            <div class="map" id="map">
+                <div id="layout0">
+                    <img class="img-responsive" src="img/map/0.jpg">
+                </div>
+                <div id="layout1">
+                    <img class="img-responsive" src="img/map/1.jpg">
+                </div>
+                <div id="layout2">
+                    <img class="img-responsive" src="img/map/2.jpg">
+                </div>
+                <div id="layout3">
+                    <img class="img-responsive" src="img/map/3.jpg">
+                </div>
+                <div id="layout4">
+                    <img class="img-responsive" src="img/map/4.jpg">
+                </div>
+                <div id="layout5">
+                    <img class="img-responsive" src="img/map/5.jpg">
+                </div>
             </div>
             <div class="container">
                 <p class="text">
@@ -220,28 +234,28 @@
                 <h2>Нормативные документы</h2>
                 <ul class="docs clearfix">
                     <li>
-                        <a href="img/docs.jpg">
-                            <img class="img-responsive" src="img/docs.jpg" alt="">
+                        <a href="img/sert/s1.jpg">
+                            <img class="img-responsive" src="img/sert/s1_xs.jpg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="img/docs.jpg">
-                            <img class="img-responsive" src="img/docs.jpg" alt="">
+                        <a href="img/sert/s2.jpg">
+                            <img class="img-responsive" src="img/sert/s2_xs.jpg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="img/docs.jpg">
-                            <img class="img-responsive" src="img/docs.jpg" alt="">
+                        <a href="img/sert/s3.jpg">
+                            <img class="img-responsive" src="img/sert/s3_xs.jpg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="img/docs.jpg">
-                            <img class="img-responsive" src="img/docs.jpg" alt="">
+                        <a href="img/sert/s4.jpg">
+                            <img class="img-responsive" src="img/sert/s4_xs.jpg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="img/docs.jpg">
-                            <img class="img-responsive" src="img/docs.jpg" alt="">
+                        <a href="img/sert/s5.jpg">
+                            <img class="img-responsive" src="img/sert/s5_xs.jpg" alt="">
                         </a>
                     </li>
                 </ul>
@@ -351,7 +365,6 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/vendor/validator.js"></script>

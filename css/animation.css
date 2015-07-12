@@ -15,3 +15,8 @@
 	-webkit-animation: bounceInRight 1s .8s forwards;
 	animation: bounceInRight 1s .8s forwards;
 }
+
+.block03 li.item4.animated {
+	-webkit-animation: bounceInRight 1s 1s forwards;
+	animation: bounceInRight 1s 1s forwards;
+}
