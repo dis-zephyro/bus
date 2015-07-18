@@ -17,13 +17,21 @@ $(function() {
     });
 });
 
+/*
+$(".city-slider").owlCarousel({
+    items: 2,
+    slideSpeed: 1000,
+    autoPlay: true,
+    pagination: false
+});
 
+ */
 $('.city-slider').slick({
     dots: false,
     arrows: false,
-    autoplay: true,
     infinite: true,
-    autoplaySpeed: 4000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1
 });
@@ -105,6 +113,10 @@ $(".btn-popup").fancybox({
     'closeBtn' : false
 });
 
+$(".btn-schedule").fancybox({
+    "padding" : 20
+});
+
 $('.btn-close').click(function(){
     $.fancybox.close();
 });
@@ -119,249 +131,14 @@ $('.header li a').click(function(){
     return false;
 });
 
-/*
-function map () {
-
-    var myMap = new ymaps.Map("layout0", {
-            center: [45.0395,40.1567], // Краснодар
-            zoom: 7,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([45.0445,41.9691]); //Ставрополь
-        myPlacemark2 = new ymaps.Placemark([44.8950,37.3163]); // Анапа
-        myPlacemark3 = new ymaps.Placemark([44.7235,37.7687]); // Новороссийск
-        myPlacemark4 = new ymaps.Placemark([43.5815,39.7229]); // Сочи
-        myPlacemark5 = new ymaps.Placemark([45.0319,35.3824]); // Феодосия
-        myPlacemark6 = new ymaps.Placemark([43.0157,41.0251]); // Сухуми
-
-    myMap.geoObjects.add(myPlacemark1);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
-    myMap.geoObjects.add(myPlacemark5);
-    myMap.geoObjects.add(myPlacemark6);
-
-    myMap.behaviors.disable('scrollZoom');
+$('.city-link').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str, {offset:-100});
+    return false;
+});
 
 
-}
 
-function map1 () {
-
-    var myMap = new ymaps.Map("layout1", {
-            center: [45.0395,40.1567], // Краснодар
-            zoom: 7,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([45.0445,41.9691]); //Ставрополь
-    myPlacemark2 = new ymaps.Placemark([44.8950,37.3163]); // Анапа
-    myPlacemark3 = new ymaps.Placemark([44.7235,37.7687]); // Новороссийск
-    myPlacemark4 = new ymaps.Placemark([43.5815,39.7229]); // Сочи
-    myPlacemark5 = new ymaps.Placemark([45.0319,35.3824]); // Феодосия
-    myPlacemark6 = new ymaps.Placemark([43.0157,41.0251]); // Сухуми
-
-    myMap.geoObjects.add(myPlacemark1);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
-    myMap.geoObjects.add(myPlacemark5);
-    myMap.geoObjects.add(myPlacemark6);
-
-    var multiRoute = new ymaps.multiRouter.MultiRoute({
-
-        referencePoints: [
-            [45.0445,41.9691],
-            [44.8950,37.3163]
-        ],
-        params: {
-            results: 1
-        }
-    }, {
-        boundsAutoApply: false
-    });
-
-    myMap.geoObjects.add(multiRoute);
-    myMap.behaviors.disable('scrollZoom');
-}
-
-function map2 () {
-
-    var myMap = new ymaps.Map("layout2", {
-            center: [45.0395,40.1567], // Краснодар
-            zoom: 7,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([45.0445,41.9691]); //Ставрополь
-    myPlacemark2 = new ymaps.Placemark([44.8950,37.3163]); // Анапа
-    myPlacemark3 = new ymaps.Placemark([44.7235,37.7687]); // Новороссийск
-    myPlacemark4 = new ymaps.Placemark([43.5815,39.7229]); // Сочи
-    myPlacemark5 = new ymaps.Placemark([45.0319,35.3824]); // Феодосия
-    myPlacemark6 = new ymaps.Placemark([43.0157,41.0251]); // Сухуми
-
-    myMap.geoObjects.add(myPlacemark1);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
-    myMap.geoObjects.add(myPlacemark5);
-    myMap.geoObjects.add(myPlacemark6);
-
-    var multiRoute = new ymaps.multiRouter.MultiRoute({
-
-        referencePoints: [
-            [45.0445,41.9691],
-            [44.7235,37.7687]
-        ],
-        params: {
-            results: 1
-        }
-    }, {
-        boundsAutoApply: false
-    });
-
-    myMap.geoObjects.add(multiRoute);
-    myMap.behaviors.disable('scrollZoom');
-}
-
-function map3 () {
-
-    var myMap = new ymaps.Map("layout3", {
-            center: [45.0395,40.1567], // Краснодар
-            zoom: 7,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([45.0445,41.9691]); //Ставрополь
-    myPlacemark2 = new ymaps.Placemark([44.8950,37.3163]); // Анапа
-    myPlacemark3 = new ymaps.Placemark([44.7235,37.7687]); // Новороссийск
-    myPlacemark4 = new ymaps.Placemark([43.5815,39.7229]); // Сочи
-    myPlacemark5 = new ymaps.Placemark([45.0319,35.3824]); // Феодосия
-    myPlacemark6 = new ymaps.Placemark([43.0157,41.0251]); // Сухуми
-
-    myMap.geoObjects.add(myPlacemark1);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
-    myMap.geoObjects.add(myPlacemark5);
-    myMap.geoObjects.add(myPlacemark6);
-
-    var multiRoute = new ymaps.multiRouter.MultiRoute({
-
-        referencePoints: [
-            [45.0445,41.9691],
-            [43.5815,39.7229]
-        ],
-        params: {
-            results: 1
-        }
-    }, {
-        boundsAutoApply: false
-    });
-
-    myMap.geoObjects.add(multiRoute);
-    myMap.behaviors.disable('scrollZoom');
-}
-
-function map4 () {
-
-    var myMap = new ymaps.Map("layout4", {
-            center: [45.0395,40.1567], // Краснодар
-            zoom: 7,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([45.0445,41.9691]); //Ставрополь
-    myPlacemark2 = new ymaps.Placemark([44.8950,37.3163]); // Анапа
-    myPlacemark3 = new ymaps.Placemark([44.7235,37.7687]); // Новороссийск
-    myPlacemark4 = new ymaps.Placemark([43.5815,39.7229]); // Сочи
-    myPlacemark5 = new ymaps.Placemark([45.0319,35.3824]); // Феодосия
-    myPlacemark6 = new ymaps.Placemark([43.0157,41.0251]); // Сухуми
-
-    myMap.geoObjects.add(myPlacemark1);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
-    myMap.geoObjects.add(myPlacemark5);
-    myMap.geoObjects.add(myPlacemark6);
-
-    var multiRoute = new ymaps.multiRouter.MultiRoute({
-
-        referencePoints: [
-            [45.0445,41.9691],
-            [45.0319,35.3824]
-        ],
-        params: {
-            results: 1
-        }
-    }, {
-        boundsAutoApply: false
-    });
-
-    myMap.geoObjects.add(multiRoute);
-    myMap.behaviors.disable('scrollZoom');
-}
-
-function map5 () {
-
-    var myMap = new ymaps.Map("layout5", {
-            center: [45.0395,40.1567], // Краснодар
-            zoom: 7,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([45.0445,41.9691]); //Ставрополь
-    myPlacemark2 = new ymaps.Placemark([44.8950,37.3163]); // Анапа
-    myPlacemark3 = new ymaps.Placemark([44.7235,37.7687]); // Новороссийск
-    myPlacemark4 = new ymaps.Placemark([43.5815,39.7229]); // Сочи
-    myPlacemark5 = new ymaps.Placemark([45.0319,35.3824]); // Феодосия
-    myPlacemark6 = new ymaps.Placemark([43.0157,41.0251]); // Сухуми
-
-    myMap.geoObjects.add(myPlacemark1);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
-    myMap.geoObjects.add(myPlacemark5);
-    myMap.geoObjects.add(myPlacemark6);
-
-    var multiRoute = new ymaps.multiRouter.MultiRoute({
-
-        referencePoints: [
-            [45.0445,41.9691],
-            [43.0157,41.0251]
-        ],
-        params: {
-            results: 1
-        }
-    }, {
-        boundsAutoApply: false
-    });
-
-    myMap.geoObjects.add(multiRoute);
-    myMap.behaviors.disable('scrollZoom');
-}
-
-ymaps.ready(map);
-ymaps.ready(map1);
-ymaps.ready(map2);
-ymaps.ready(map3);
-ymaps.ready(map4);
-ymaps.ready(map5);
-
-*/
 $('#map1').click(function(){
     $('#layout0, #layout2, #layout3, #layout4, #layout5').hide();
     $('#layout1').show();

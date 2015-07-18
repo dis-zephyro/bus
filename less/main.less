@@ -225,7 +225,7 @@ body {
 		}
 
 		h1 {
-			padding-top: 120px;
+			padding-top: 150px;
 			font-size: 22px;
 			font-weight: 600;
 			line-height: 28px;
@@ -315,34 +315,34 @@ body {
 	ul {
 		float: left;
 		width: 50%;
-		padding-left: 80px;
+		padding-left: 60px;
 	}
 
 	li {
 		text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 
 		&.item2 {
-			padding-left: 50px;
+			padding-left: 40px;
 		}
 
 		&.item3 {
-			padding-left: 100px;
+			padding-left: 80px;
 		}
 
 		&.item4 {
-			padding-left: 150px;
+			padding-left: 120px;
 		}
 
 		&.item6 {
-			padding-left: 50px;
+			padding-left: 40px;
 		}
 
 		&.item7 {
-			padding-left: 100px;
+			padding-left: 80px;
 		}
 
 		&.item8 {
-			padding-left: 150px;
+			padding-left: 120px;
 		}
 	}
 
@@ -361,6 +361,10 @@ body {
 				line-height: 40px;
 				padding: 0 10px;
 			}
+		}
+
+		ul {
+			padding-left: 20px;
 		}
 	}
 
@@ -393,21 +397,54 @@ body {
 	padding-top: 50px;
 	padding-bottom: 80px;
 
+	.ticket-block {
+		color: #fff;
+		padding: 30px;
+		font-size: 18px;
+		text-align: center;
+		background: #8e2025;
+		margin-bottom: 50px;
+
+		span {
+			display: block;
+			margin-bottom: 5px;
+
+			&.one {
+				font-size: 22px;
+			}
+
+			&.phone-primary {
+				font-size: 30px;
+				font-weight: 600;
+			}
+
+			&.phone-second {
+				font-size: 24px;
+				font-weight: 600;
+			}
+		}
+	}
+
 	.city {
 		width: 100%;
 		display: table;
-		margin-bottom: 40px;
 
-		a {
+		li {
 			width: 20%;
-			color: #ffcb05;
-			cursor: pointer;
-			background: #3b8575;
 			text-align: center;
 			display: table-cell;
-			text-decoration: none;
 			border-left: 8px solid #fff;
 			border-right: 8px solid #fff;
+		}
+
+		a {
+			color: #ffcb05;
+			cursor: pointer;
+			display: block;
+			margin-bottom: 15px;
+			background: #3b8575;
+			text-align: center;
+			text-decoration: none;
 			.transition(all 0.4s ease);
 
 
@@ -426,7 +463,38 @@ body {
 			}
 		}
 
+
+		.btn-schedule {
+			color: #000;
+			font-weight: 600;
+			background: #ffcb05;
+			padding: 15px 20px;
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 5px;
+
+			&:hover {
+				color: #000;
+				background-color: #feaa23;
+			}
+		}
+
+
+		.link-schedule {
+			color: #000;
+			font-size: 16px;
+			background: transparent;
+			margin-bottom: 40px;
+
+			&:hover {
+				color: #000;
+				background: transparent;
+				text-decoration: underline;
+			}
+		}
+
 		.city-text {
+			height: 90px;
 			padding: 5px;
 			font-size: 16px;
 			line-height: 18px;
@@ -435,6 +503,7 @@ body {
 
 	.map {
 		width: 100%;
+		margin-bottom: 40px;
 
 		#layout0,
 		#layout1,
@@ -463,14 +532,50 @@ body {
 		text-align: center;
 	}
 
+
+
 	@media (max-width: 1229px) {
 
 		padding-top: 40px;
 		padding-bottom: 40px;
 
+		.ticket-block {
+			color: #fff;
+			padding: 20px;
+			font-size: 16px;
+			margin-bottom: 30px;
+
+
+
+			span {
+				display: block;
+				margin-bottom: 5px;
+
+				&.one {
+					font-size: 20px;
+				}
+
+				&.phone-primary {
+					font-size: 24px;
+					font-weight: 700;
+				}
+
+				&.phone-second {
+					font-size: 20px;
+					font-weight: 700;
+				}
+			}
+		}
+
 		.city {
+			width: 20%;
+			text-align: center;
+			display: table-cell;
+			border-left: 8px solid #fff;
+			border-right: 8px solid #fff;
 
 			.city-text {
+				height: 60px;
 				padding: 5px;
 				font-size: 9px;
 				line-height: 12px;
@@ -491,13 +596,13 @@ body {
 			margin-left: auto;
 			margin-right: auto;
 
-			a {
+			li {
 				width: 224px;
 				display: inline-block;
-				margin-bottom: 40px;
 			}
 
 			.city-text {
+				height: 105px;
 				padding: 15px 5px;
 				font-size: 14px;
 				line-height: 18px;
@@ -1435,6 +1540,10 @@ body {
 			background: url("../img/btn-girl.png") 0 0 no-repeat;
 		}
 	}
+}
+
+.schedule {
+	font-size: 16px;
 }
 
 
