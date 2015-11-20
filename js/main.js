@@ -47,7 +47,7 @@ $(document).ready(function() {
         {
             var $form = $(this).parent(),
                 name =     $('input[name="name"]', $form).val(),
-                phone =    $('input[name="phone"]', $form).val()
+                phone =    $('input[name="phone"]', $form).val();
             console.log(name, phone);
             $.ajax({
                 type: "POST",
@@ -64,8 +64,7 @@ $(document).ready(function() {
                         'padding': 0,
                         'minWidth': 600,
                         'transitionIn'    : 'none',
-                        'transitionOut'   : 'none',
-                        'closeBtn' : false
+                        'transitionOut'   : 'none'
                     }
                 );
                 setTimeout("$.fancybox.close()", 3000);

@@ -245,6 +245,7 @@ body {
   .block01 {
     margin-top: 0;
     height: 600px;
+    padding-top: 30px;
     background-size: cover;
   }
   .block01 .logo {
@@ -275,7 +276,7 @@ body {
   .block01 .logo {
     float: none;
     width: 290px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 15px auto;
   }
   .block01 .contact {
     float: none;
@@ -297,6 +298,7 @@ body {
     font-weight: 600;
     line-height: 30px;
     padding-top: 20px;
+    text-shadow: 0px 1px 3px #000000;
   }
   .block01 h1 span {
     color: #fff;
@@ -408,11 +410,11 @@ body {
   padding-bottom: 80px;
 }
 .block04 .ticket-block {
-  color: #fff;
+  color: #000;
   padding: 30px;
   font-size: 18px;
   text-align: center;
-  background: #8e2025;
+  background: #feaa23;
   margin-bottom: 50px;
 }
 .block04 .ticket-block span {
@@ -429,6 +431,11 @@ body {
 .block04 .ticket-block span.phone-second {
   font-size: 24px;
   font-weight: 600;
+}
+.block04 .city-inner {
+  margin: 0 -8px;
+  position: relative;
+  overflow: hidden;
 }
 .block04 .city {
   width: 100%;
@@ -552,11 +559,7 @@ body {
     font-weight: 700;
   }
   .block04 .city {
-    width: 20%;
-    text-align: center;
-    display: table-cell;
-    border-left: 8px solid #fff;
-    border-right: 8px solid #fff;
+    width: 100%;
   }
   .block04 .city .city-text {
     height: 60px;
@@ -1382,6 +1385,7 @@ body {
 }
 .schedule {
   font-size: 16px;
+  font-weight: 700;
 }
 /* Typography
    ========================= */
